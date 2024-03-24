@@ -1,4 +1,5 @@
 import streamlit as st
+import sql
 from menu import menu_with_redirect
 
 # Redirect to app.py if not logged in, otherwise show the navigation menu
@@ -11,3 +12,5 @@ if st.session_state.role not in ["admin", "super-admin"]:
 
 st.title("This page is available to all admins")
 st.markdown(f"You are currently logged with the role of {st.session_state.role}.")
+
+st.write(sql.get_users())

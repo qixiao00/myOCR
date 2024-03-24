@@ -33,7 +33,7 @@ def logout():
     st.session_state.logged_in = False
     st.info("Logged out successfully!")
     sleep(0.5)
-    st.switch_page("streamlit_app.py")
+    st.switch_page("app.py")
 
 
 def menu_with_redirect():
