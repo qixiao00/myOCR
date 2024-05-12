@@ -13,4 +13,9 @@ def save_uploaded_files(uploaded_files):
     return saved_files
 
 
-# def button_VATInvoice():
+def filter_non_admin(df):
+    return df[df['role'] == 'admin']
+
+
+def filter_non_user(df):
+    return df[df['role'] == 'user']

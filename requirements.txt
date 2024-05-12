@@ -1,3 +1,6 @@
 streamlit~=1.32.2
 mysqlclient==2.2.4
 SQLAlchemy==2.0.29
+pandas~=2.2.1
+alibabacloud_tea_openapi~=0.3.8
+alibabacloud_tea_util~=0.3.11
